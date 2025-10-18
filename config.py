@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "9707616e3703ade0dec6d951780f9cca")
 BOT_TOKEN = environ.get("BOT_TOKEN", " ")
 
 PICS = (environ.get('PICS', 'https://telegra.ph/HgBotz-10-18')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7259440235').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "ainfilmbot") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -64,7 +64,7 @@ SHORTLINK_API = environ.get("SHORTLINK_API", "") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
 
 # Website Info:
-WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
+WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 WEBSITE_URL = environ.get("WEBSITE_URL", "ainfilmbot") # For More Information Check Video On Yt - @Tech_VJ
