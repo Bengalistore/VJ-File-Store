@@ -110,3 +110,20 @@ if __name__ == '__main__':
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
+# --- Keep Alive Section for Replit ---
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+# Start the web server in a separate thread
+Thread(target=run).start()
+# --- End Keep Alive Section ---
